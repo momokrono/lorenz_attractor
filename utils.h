@@ -36,10 +36,8 @@ public:
     {
         double i, j, k, x;
         i = pos.x;
-        j  = pos.y;
+        j = pos.y;
         k = pos.z;
-        // double d = std::sqrt(i*i + j*j);
-        // x = (i*(d/i+std::cos(angle))+j*(d/j+std::sin(angle)));
         x = i*std::cos(angle)-j*std::sin(angle);
         auto vect = sf::Vector2f(x, k);
         position = scale*vect+sf::Vector2f(400,300);

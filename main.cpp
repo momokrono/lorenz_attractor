@@ -90,7 +90,7 @@ int main()
         evolve();
         rotate();
         draw_attractor();
-        save_frame();
+        // save_frame();
         window.clear();
         sf::Sprite sprite(texture.getTexture());
         window.draw(sprite);
